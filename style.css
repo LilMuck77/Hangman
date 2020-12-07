@@ -1,0 +1,41 @@
+body{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+
+    text-align: center;
+    background-position-x: 50%;
+    background-position-y: 100%;
+}
+h1{
+    font-family: Jokerman;
+    font-size: 100px;
+    color: darkred;
+}
+h3{
+    font-family: Cambria;
+}
+#secretWordOutput{
+    font-size: 50px;
+    font-family: Jokerman;
+
+}
+#loser{
+    color: red;
+    font-size: 80px;
+    font-family: "Franklin Gothic Medium";
+}
+#winner{
+    color:blue;
+    font-size: 80px;
+    font-family: "Franklin Gothic Medium";
+
+}
+p{
+    font-family: "Times New Roman";
+    font-size: 25px;
+}
+#wrongGuessesOutput{
+    font-family: "Times New Roman";
+    font-size: 30px;
+}

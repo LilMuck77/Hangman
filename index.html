@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+
+    <title>Hangman</title>
+
+</head>
+<body>
+<style>
+    body {
+        background-image: url("https://www.techykeeday.com/wp-content/uploads/2017/07/Hangman.jpg");
+
+        background-size: 120%;
+    }
+</style>
+
+<div class="container w-50,">
+
+    <div>
+        <h1>Hangman</h1>
+        <br>
+        <h3>Guess The Secret Word</h3>
+
+        <span id="secretWordOutput"></span>
+        <span id="winner"></span>
+        <span id="loser"></span>
+
+        <br><br>
+        <table id="alphabet">
+            <div class="text-center">
+                <tr>
+                    <td>
+                        <button class="btn btn-primary" id="aLetter" value="A">A</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="bLetter" value="B">B</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="cLetter" value="C">C</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="dLetter" value="D">D</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="eLetter" value="E">E</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="fLetter" value="F">F</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="gLetter" value="G">G</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="hLetter" value="H">H</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="iLetter" value="I">I</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary" id="jLetter" value="J">J</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="kLetter" value="K">K</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="lLetter" value="L">L</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="mLetter" value="M">M</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="nLetter" value="N">N</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="oLetter" value="O">O</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="pLetter" value="P">P</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="qLetter" value="Q">Q</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary" id="rLetter" value="R">R</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="sLetter" value="S">S</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="tLetter" value="T">T</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="uLetter" value="U">U</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="vLetter" value="V">V</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="wLetter" value="W">W</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="xLetter" value="X">X</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="yLetter" value="Y">Y</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="zLetter" value="Z">Z</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+        <br>
+
+        <p>You have 6 attempts to guess the secret word. <br>
+            Fail to do so, you get LYNCHED.</p>
+        <span id="wrongGuessesOutput">Wrong Guesses=</span>
+    </div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="code.js"></script>
+</body>
+</html>
