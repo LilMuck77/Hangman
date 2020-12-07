@@ -114,12 +114,6 @@ $(document).ready(function () {
         $(this).prop("disabled", "true");
         var matchFound = false;
 
-        var userGuess = $(this).text();
-        for (var i = 0; i < secretWord.length; i++) {
-            if (userGuess === secretWord.charAt(i)) {
-                matchFound = true;
-            }
-        }
 
 
     });
