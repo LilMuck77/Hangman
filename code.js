@@ -117,7 +117,6 @@ $(document).ready(function () {
         var userGuess = $(this).text();
         for (var i = 0; i < secretWord.length; i++) {
             if (userGuess === secretWord.charAt(i)) {
-                $("#winner").find(":nth-child(" + (i + 1) + ")").addClass("winner");
                 matchFound = true;
             }
         }
